@@ -1,0 +1,18 @@
+Entidade: Produto
+
+Atributos Simples:
+Nome (string)
+Preço (decimal)
+Descrição (string)
+Atributo Composto:
+Especificações:
+Peso (decimal)
+Dimensões (string)
+Cor (string)
+Atributo Multivalorado:
+Tags (lista de strings)
+Neste exemplo:
+
+"Nome", "Preço" e "Descrição" são atributos simples.
+"Especificações" é um atributo composto que inclui vários sub-atributos relacionados às características físicas do produto.
+"Tags" é um atributo multivalorado, o que significa que um produto pode ter várias palavras-chave associadas a ele para facilitar a pesquisa e organização.
