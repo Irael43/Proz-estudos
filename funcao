@@ -1,0 +1,43 @@
+def soma(a, b):
+    return a + b
+
+def subtracao(a, b):
+    return a - b
+
+def multiplicacao(a, b):
+    return a * b
+
+def divisao(a, b):
+    if b == 0:
+        return "Erro: divisão por zero"
+    else:
+        return a / b
+
+def menu():
+    print("1: Soma")
+    print("2: Subtração")
+    print("3: Multiplicação")
+    print("4: Divisão")
+    print("0: Sair")
+
+while True:
+    menu()
+    opcao = input("Digite o número para a operação correspondente: ")
+
+    if opcao == '0':
+        print("Saindo...")
+        break
+    elif opcao in ['1', '2', '3', '4']:
+        valor1 = float(input("Digite o primeiro valor: "))
+        valor2 = float(input("Digite o segundo valor: "))
+
+        if opcao == '1':
+            print("Resultado:", soma(valor1, valor2))
+        elif opcao == '2':
+            print("Resultado:", subtracao(valor1, valor2))
+        elif opcao == '3':
+            print("Resultado:", multiplicacao(valor1, valor2))
+        elif opcao == '4':
+            print("Resultado:", divisao(valor1, valor2))
+    else:
+        print("Essa opção não existe")
